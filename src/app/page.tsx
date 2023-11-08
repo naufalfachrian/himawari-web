@@ -4,8 +4,8 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between lg:flex">
-        <div className="fixed left-0 top-24 flex h-auto w-full justify-center lg:static lg:h-aut lg:w-auto">
+      <div className="z-10 max-w-5xl w-full items-center lg:justify-between lg:flex">
+        <div className="left-0 top-24 flex h-auto w-full justify-center lg:static lg:h-auto lg:w-auto">
           <Image
             src="/himawari.png"
             alt="Himawari Logo"
@@ -14,23 +14,10 @@ export default function Home() {
             priority
             />
         </div>
-        <div className="fixed bottom-0 left-0 hidden h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <div className='font-brand font-medium flex lg:w-auto justify-center'>
+          <span className='rounded-lg bg-brand-white p-2 text-brand-blue text-center'>
+            Partner Komunitas dan Kreatif untuk Kreator Virtual!
+          </span>
         </div>
       </div>
 
@@ -45,25 +32,25 @@ export default function Home() {
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:max-w-5xl lg:w-full lg:grid-cols-4 lg:text-left">
+      <div className="mb-32 grid text-left lg:mb-0 lg:max-w-5xl lg:w-full lg:grid-cols-4 md:grid-cols-2">
         <MainMenu 
-          title={'Talents'} 
-          description={'Find more information about our talents!'} 
+          title={'Anggota'} 
+          description={'Lihat siapa saja yang bergabung dengan kami!'} 
           href={'/'}
         />
         <MainMenu 
-          title={'About'} 
-          description={'How we started and our vision!'}
+          title={'Gabung'} 
+          description={'Mari gabung dan mekar bersama kami!'}
           href={'/'}
         />
         <MainMenu 
-          title={'Join'} 
-          description={'Let\'s join us and grow together!'}
+          title={'Informasi'} 
+          description={'Siapa kami dan apa yang kami lakukan?'}
           href={'/'}
         />
         <MainMenu 
-          title={'Contact Us'} 
-          description={'We look forward to hearing from you!'}
+          title={'Kontak'} 
+          description={'Bagaimana cara menghubungi kami?'}
           href={'/'}
         />
       </div>
@@ -72,7 +59,7 @@ export default function Home() {
         <span
           className="pointer-events-none flex place-items-center gap-2 p-4 lg:pointer-events-auto text-sm opacity-50 font-brand"
         >
-          ©️ 2021 Himawari, PT. Mekar Bersama Bunga (Perorangan)
+          ©️ 2023 Himawari, PT. Mekar Bersama Bunga (Perorangan)
         </span>
       </div>
     </main>
