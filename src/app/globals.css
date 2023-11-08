@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #f4f4f4;
+  --background-start: #80a1ff;
+  --background-end: #f4f4f4;
+}
+
+html {
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--background-start)
+    )
+    var(--background-end);
+}
+
+body {
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--background-end)
+    )
+    var(--background-start);
+}
