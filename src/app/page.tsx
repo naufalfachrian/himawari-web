@@ -1,4 +1,5 @@
 import { MainMenu } from '@/components/mainMenu'
+import { SocialLink } from '@/components/socialLink'
 import Image from 'next/image'
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="mb-32 grid text-left lg:mb-0 lg:max-w-5xl lg:w-full lg:grid-cols-4 md:grid-cols-2">
+      <div className="mb-32 grid text-left lg:mb-16 lg:max-w-5xl lg:w-full lg:grid-cols-4 md:grid-cols-2">
         <MainMenu 
           title={'Anggota'} 
           description={'Lihat siapa saja yang bergabung dengan kami!'} 
@@ -55,9 +56,15 @@ export default function Home() {
         />
       </div>
 
-      <div className="fixed bottom-0 left-0 w-full flex justify-center">
+      <div className="fixed bottom-0 left-0 w-full flex flex-col justify-center items-center">
+        <div className='items-center flex gap-x-4'>
+          <SocialLink href={'https://www.youtube.com/@IdHimawari'} src={'/youtube.svg'} alt={'YouTube Logo'} />
+          <SocialLink href={'https://discord.com/invite/dDjw6tW9JG'} src={'/discord.svg'} alt={'Discord Logo'} />
+          <SocialLink href={'https://twitter.com/IdHimawari'} src={'/twitter.svg'} alt={'Twitter Logo'} />
+          <SocialLink href={'https://www.instagram.com/idhimawari/'} src={'/instagram.svg'} alt={'Instagram Logo'} />
+        </div>
         <span
-          className="pointer-events-none flex place-items-center gap-2 p-4 lg:pointer-events-auto text-sm opacity-50 font-brand"
+          className="pointer-events-none flex place-items-center gap-2 pb-4 pt-2 lg:pointer-events-auto text-sm opacity-50 font-brand"
         >
           ©️ 2023 Himawari, PT. Mekar Bersama Bunga (Perorangan)
         </span>
