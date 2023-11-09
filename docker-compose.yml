@@ -1,0 +1,6 @@
+version: '3'
+services:
+  himawari-web:
+    build: .
+    ports:
+      - "8001:3000"
